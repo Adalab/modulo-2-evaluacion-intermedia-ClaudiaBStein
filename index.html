@@ -9,9 +9,16 @@
   </head>
   <body>
     <h1>Adivina el número</h1>
-    <form action="" method="GET" class="body__form">
-      <label for=""> Introduce aquí tu número</label> Prueba Pista: Escribe el
-      número y dale a Prueba Número de intentos: 0
+    <form action="" method="GET" class="form">
+      <label class="body__form--label" for="number"
+        >Introduce aquí tu número:
+      </label>
+      <input class="js-number form--number" type="number" />
+      <input class="js-button form--button" type="button" value="Prueba" />
+      <p class="js-clue form--clue">
+        Pista: Escribe el numero y dale a Prueba.
+      </p>
+      <input class="js-tries form--count" type="text" name="count" value="0" />
     </form>
     <script type="javascript" src="./js/main.js"></script>
   </body>
