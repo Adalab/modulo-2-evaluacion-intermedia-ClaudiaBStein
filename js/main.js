@@ -21,8 +21,8 @@ console.log(`El número aleatorio es ${randomNumber}`);
 //función del mecanismo
 
 function guessRandomNumber(){
-const inputNumberValue = inputNumber.value;
-//parseInt(
+const inputNumberValue = parseInt(inputNumber.value);
+//
 if (randomNumber===inputNumberValue){
     clueElement.classList.add ('¡Has ganado, campeona!');
 }
@@ -43,6 +43,8 @@ function countTries() {
   countElement = tryNumber + 1;
   countElement.value = 'Número de intentos: ' + countElement;
 }
+
+
 
 //evento del botón
 
