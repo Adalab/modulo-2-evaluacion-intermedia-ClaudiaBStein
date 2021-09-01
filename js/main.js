@@ -39,15 +39,18 @@ else if (randomNumber<1 || inputNumberValue>100){
 
 //función de intentos
 
-function countTries() {
+function tryCount() {
   countElement = tryNumber + 1;
   countElement.value = 'Número de intentos: ' + countElement;
 }
 
 
-
+function clickHandle(){
+  guessRandomNumber();
+ countElement();
+}
 //evento del botón
 
 tryButton.addEventListener('click', guessRandomNumber);
-tryButton.addEventListener = ('click', countTries);
+tryButton.addEventListener = ('click', tryCount);
 
